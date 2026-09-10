@@ -1,62 +1,58 @@
 # Node.js HTTP Server Assignments
 
-This repository contains five Node.js HTTP server assignments completed using the built-in Node.js HTTP module.
+This repository contains five Node.js HTTP server assignments implemented using the built-in Node.js HTTP module.
 
-## Assignment 1 – Basic HTTP Server
+## Assignments
 
-- Created a basic HTTP server using the Node.js `http` module.
-- Server runs on port 3000.
-- Displays "Welcome to Node.js Server" in the browser.
-- Logs the server URL in the terminal.
+### Assignment 1 – Basic HTTP Server
 
-## Assignment 2 – HTML Response Server
+A basic HTTP server was created using the Node.js `http` module.
 
-- Created a Node.js server that returns an HTML page.
-- Includes a Student Portal heading.
-- Displays student name, course name, and college name.
-- Includes a welcome paragraph.
+**Requirements implemented:**
+- HTTP server using `http.createServer()`
+- Server runs on port `3000`
+- Displays `Welcome to Node.js Server` in the browser
+- Logs the server URL in the terminal
 
-## Assignment 3 – Student JSON API
+**Expected Output:**
 
-- Created a `/student` endpoint.
-- Returns student information in JSON format.
-- Handles invalid routes with a 404 response.
+Browser:
+`Welcome to Node.js Server`
 
-## Assignment 4 – Route Handling Server
+Terminal:
+`Server is running on http://localhost:3000`
 
-Implemented multiple routes:
+---
 
-- `/` – Welcome to Home Page
-- `/about` – About Us
-- `/contact` – Contact Information
-- `/services` – Our Services
-- Invalid routes – 404 Page Not Found
+### Assignment 2 – HTML Response Server
 
-## Assignment 5 – Personal Portfolio Server
+A Node.js server was created to return an HTML page.
 
-Implemented the following routes:
+**Requirements implemented:**
+- Student Portal heading
+- Student Name
+- Course Name
+- College Name
+- Welcome paragraph
+- HTML response with appropriate response headers
 
-- `/` – Home
-- `/about` – About Me
-- `/skills` – Skills
-- `/projects` – Projects
-- `/contact` – Contact Details
+---
 
-Each route returns an HTML page with relevant content and navigation links. Invalid routes return a 404 response.
+### Assignment 3 – Student JSON API
 
-## Technologies Used
+A simple REST-like endpoint was created to return student information in JSON format.
 
-- Node.js
-- JavaScript
-- HTTP Module
+**Route:**
 
-## How to Run
+`/student`
 
-Run each assignment using Node.js:
+**Student Data:**
 
-```bash
-node assignment1.js
-node assignment2.js
-node assignment3.js
-node assignment4.js
-node assignment5.js
+```json
+{
+  "id": 101,
+  "name": "John",
+  "course": "BCA",
+  "semester": 4,
+  "city": "Mumbai"
+}
